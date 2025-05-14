@@ -27,4 +27,5 @@ The application provides:
 
 
 🙋‍♂️ Contact
-Developed by Hélder Peixoto – feel free to reach out with feedback or contributions!
+Developed by Hélder Peixoto - helderasp@hotmail.com
+Feel free to reach out with feedback or contributions!
