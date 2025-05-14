@@ -292,7 +292,7 @@ try:
             while len(colors) < len(values):
                 colors.append('#02FDFF')  # A default color for extra bars if needed
 
-            st.subheader(f"Number of persons affected by the radioactive cloud in Europe for :blue[_{date_str}_]")
+            st.subheader(f"Number of persons affected by the radioactive cloud in Europe on :blue[_{date_str}_]")
 
             # Only show button if polygons were successfully extracted
             #col1, col2 = st.columns([1,1])
