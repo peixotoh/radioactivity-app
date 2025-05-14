@@ -62,11 +62,14 @@ def extract_polygons_from_feature(feature):
 
 # =====================================================
 
+# set up page configuration
 st.set_page_config(page_title="Radioactive Cloud Viewer", page_icon=":radioactive:", layout="wide")
 
+# create three columns
 col1, col2, col3 = st.columns([5,1,5])
 
 # --------------------------------------------   select nuclear power plant
+# option for nuclear power plant
 central_options = st.sidebar.selectbox(
     "🏭 Choose Nuclear power  :red[_plant_]",
     ("Zarnowiec", "Tricastin", "Cattenon")
