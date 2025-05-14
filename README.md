@@ -10,7 +10,7 @@ This app is based on a scientific study co-authored by the developer and uses **
 
 The application provides:
 - A dynamic **map** showing the radioactive cloud dispersion.
-- A **bar chart** and **data table** presenting the number of people potentially affected.
+- A **bar chart** and **data table** presenting the number of persons potentially affected.
 - **Date and plant selection** options to explore different simulation scenarios.
 - Automatic retrieval of the corresponding data from the Biosphere Institute's website.
 
