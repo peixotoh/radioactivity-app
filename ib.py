@@ -308,7 +308,7 @@ try:
                 while len(colors) < len(values):
                     colors.append('#02FDFF')  # A default color for extra bars if needed
 
-                st.write("Number of persons affected by the radioactive cloud in Europe")
+                st.write(f"Number of persons affected by the radioactive cloud in Europe")
 
                 # Display the data as a table
                 chart_data = pd.DataFrame({
