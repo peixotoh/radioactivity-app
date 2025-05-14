@@ -21,7 +21,7 @@ The application provides:
 - 📅 Select simulation **date**
 - 🏭 Choose **nuclear plant**
 - 🗺️ Visualize **dispersion patterns** on an interactive map
-- 📥 **Download** the map in KML format
+- 📥 **Download** the map in GeoJSON format
 - 📊 View an interactive **bar chart** (built with Plotly) showing population affected by mSv level
 - 📥 Inspect and **download** the raw data table with exposure values
 
