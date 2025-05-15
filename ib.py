@@ -95,11 +95,35 @@ else:
 # set interval for date input
 default_date = date(2017, 1, 1)
 min_date = date(2017, 1, 1)
-max_date = date(2019, 12, 31)
-selected_date = st.sidebar.date_input("📅 Choose Simulation Date (2017-2019)", value=default_date, min_value=min_date, max_value=max_date)
+max_date = date(2020, 12, 31)
+selected_date = st.sidebar.date_input("📅 Choose Simulation Date (2017, 2018 or 2020)", value=default_date, min_value=min_date, max_value=max_date)
 if not selected_date:
     st.stop()
 date_str = selected_date.strftime("%Y-%m-%d")
+
+from datetime import date, timedelta
+import streamlit as st
+
+# # Generate all valid dates from 2017, 2018, and 2020
+# def generate_allowed_dates():
+#     allowed_years = [2017, 2018, 2020]
+#     dates = []
+#     for year in allowed_years:
+#         d = date(year, 1, 1)
+#         while d.year == year:
+#             dates.append(d)
+#             d += timedelta(days=1)
+#     return dates
+
+# allowed_dates = generate_allowed_dates()
+
+# # Set default to first date in list
+# default_date = allowed_dates[0]
+
+# # Let user select a date
+# selected_date = st.sidebar.selectbox("📅 Choose Simulation Date (2017, 2018, 2020)", allowed_dates, index=0)
+# date_str = selected_date.strftime("%Y-%m-%d")
+
 
 
 # Get the page and find KML links
@@ -292,7 +316,7 @@ try:
             while len(colors) < len(values):
                 colors.append('#02FDFF')  # A default color for extra bars if needed
 
-            st.subheader(f"Number of persons affected by the radioactive cloud in Europe on :blue[_{date_str}_]")
+            st.subheader(f"Number of persons affected by the radioactive cloud in Europe for :blue[_{date_str}_]")
 
             # Only show button if polygons were successfully extracted
             #col1, col2 = st.columns([1,1])
