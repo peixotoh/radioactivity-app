@@ -26,6 +26,7 @@ The application provides:
 - 📥 Inspect and **download** the raw data table with exposure values
 
 
-🙋‍♂️ Contact
+## 🙋‍♂️ Contact
+
 Developed by Hélder Peixoto - helderasp@hotmail.com
 Feel free to reach out with feedback or contributions!
